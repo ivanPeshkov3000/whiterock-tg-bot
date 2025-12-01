@@ -1,10 +1,22 @@
 {
+  "name": "white-rock-news-bot",
+  "version": "0.1.0",
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "migrate": "drizzle-kit migrate",
+    "generate": "drizzle-kit generate"
+  },
   "dependencies": {
-    "node-telegram-bot-api": "^0.61.0",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
     "rss-parser": "^3.13.0",
-    "node-cron": "^3.0.2",
-    "axios": "^1.5.0",
-    "cheerio": "^1.0.0"
+    "openai": "^4.58.1",
+    "pg": "^8.12.0",
+    "drizzle-orm": "^0.30.9",
+    "drizzle-kit": "^0.24.0",
+    "node-cron": "^3.0.3"
   }
 }
