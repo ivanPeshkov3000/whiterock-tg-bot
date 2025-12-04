@@ -2,7 +2,7 @@ push:
   workflows: deploy-tg-bot-workflow
   filter:
     branches:
-      - "main"
+      - "master"
 
 pull_request:
   workflows: deploy-tg-bot-workflow
@@ -10,7 +10,7 @@ pull_request:
     source_branches:
       - "**"
     target_branches:
-      - "main"
+      - "master"
 
 tokens:
   SERVICE_CONNECTION_WITH_TOKEN:
